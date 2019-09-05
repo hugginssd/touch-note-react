@@ -1,4 +1,6 @@
 import React from 'react';
+import SideBarComponent from './sidebar/sidebar';
+import EditorComponent from './editor/editor';
 import './App.css';
 
 const firebase = require('firebase');
@@ -17,10 +19,11 @@ notes: null
 
   render ()
   {
-    return(<div>
-
-
-    </div>);
+    return(
+            <div className="app-container">
+                <SideBarComponent></SideBarComponent>
+            </div>
+    );
   }
 
   componentDidMount = () =>{

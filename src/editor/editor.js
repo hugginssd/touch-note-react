@@ -8,6 +8,11 @@ import styles from './styles'
 class  EditorComponent extends React.Component{
     constructor(){
         super();
+        this.state = {
+            text: '',
+            title: '',
+            id: ''
+        };
     }
     render(){
         return(<div>Hello from Editor Component</div>)
